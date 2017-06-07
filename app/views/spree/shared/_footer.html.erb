@@ -1,8 +1,14 @@
-<footer id="footer" class="navbar navbar-light navbar-toggleable-sm bg-faded" data-hook>
-  <div id="footer-left" class="columns alpha eight" data-hook>
-  	<div>Contact Us</div>
-  	<a href="/" class="navbar-brand">Postcards For Progress</a>
-    <p><sm><%= Spree.t :powered_by  %> <%= link_to 'Solidus', 'http://solidus.io/' %></sm></p>
-  </div>
-  <div id="footer-right" class="columns omega eight" data-hook></div>
+<footer id="footer" class="bg-faded mt-4">
+  <div class="container-fluid py-3">
+  	<div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4">
+        <h5>Contact Us</h5>
+      </div>
+      <div class="col-md-4"></div>
+    </div>
+    <div class="row">
+    	<div class="col-md-4 col-md-offset-2"><a href="/">Postcards For Progress</a></div>
+      <div class="col-md-4"><%= Spree.t :powered_by  %> <%= link_to 'Solidus', 'http://solidus.io/' %></div>
+    </div>
 </footer>
